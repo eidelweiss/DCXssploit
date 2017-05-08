@@ -96,7 +96,7 @@ xss_attack = ["%22%3Cscript%3Ealert%28%27dev%27%29%3C%2Fscript%3E"
                             "<isindex action=j&Tab;a&Tab;vas&Tab;c&Tab;r&Tab;ipt:alert(1) type=image>",
                             "<marquee/onstart=confirm(2)>",
                             "<A HREF=\"http://www.google.com./\">XSS</A>",
-                            "<svg/onload=prompt(1);>"
+                            "<svg/onload=prompt(1);>",
 							");xss:expression(alert(1));border-image:url(foobar",
 							"xss'+alert(1)+'",
 							"</textarea><script>alert(/xss/)</script>",
