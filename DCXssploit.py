@@ -183,13 +183,13 @@ def xxs2(exploi):
 ####### Print Menu and Exmaple ########
 
 
-print("\t\033[1;31m					/--------------------------//	\033[1;m")
-print("\t\033[1;31m				   	|          devilzXss       ||	\033[1;m")
-print("\t\033[1;31m 				|     By devilzc0de team   ||	\033[1;m")
-print("\t\033[1;31m 				|                          ||	\033[1;m")
-print("\t\033[1;31m					|       Beta Version       |/ 	\033[1;m")
-print("\t\033[1;31m 				|      devilzc0de.org      /	\033[1;m")
-print("\t\033[1;31m                '--------------------------' 	\033[1;m")
+print("\t\033[1;31m	/--------------------------//	\033[1;m")
+print("\t\033[1;31m	|          devilzXss       ||	\033[1;m")
+print("\t\033[1;31m	|     By devilzc0de team   ||	\033[1;m")
+print("\t\033[1;31m	|                          ||	\033[1;m")
+print("\t\033[1;31m	|       Beta Version       |/ 	\033[1;m")
+print("\t\033[1;31m	|      devilzc0de.org      /	\033[1;m")
+print("\t\033[1;31m	'--------------------------' 	\033[1;m")
 
 
 print("\033[1;35m These types of URLs are accepted\033[1;m")
