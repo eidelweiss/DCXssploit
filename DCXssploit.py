@@ -15,7 +15,7 @@ import time
 import ssl
 import re
 import six.moves.http_cookiejar, optparse, random, string, urlparse
-import sys
+import os, sys
 import six.moves.http_client
 import colorama
 import cookielib
