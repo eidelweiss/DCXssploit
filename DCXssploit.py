@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-# -*- author: eidelweiss -*-
+# -*- coding: utf-8 -*-
+# author: eidelweiss
 # Devilzc0de XSS Scanner and inject0r by eidelweiss devilzc0de.org
 
 from __future__ import absolute_import
