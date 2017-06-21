@@ -5,7 +5,7 @@ This is Beta version, if you have or find any bug or suggestion to make this stu
 Now work in UNIX and WINDOWS</br>
 </br>
 <br>
-Credit to: UltimateHackers
+Credit and thanks to: UltimateHackers, Nanang a.k.a suwung, and all of you.
 
 </br>
 <br>
