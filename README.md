@@ -5,6 +5,10 @@ This is Beta version, if you have or find any bug or suggestion to make this stu
 Now work in UNIX and WINDOWS</br>
 </br>
 <br>
+Credit to: UltimateHackers
+
+</br>
+<br>
 need to Install 3 modul for windows ori linux (six, custom, colorama): you can use the following command</br><br>
 pip install six</br><br>
 pip install custom</br><br>
