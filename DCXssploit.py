@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # author: eidelweiss
 # Devilzc0de XSS Scanner and inject0r by eidelweiss devilzc0de.org
-# thanks to nanang a.k.a suwung for correction
+# thanks to nanang a.k.a suwung for correction and UltimateHackers
 
 from __future__ import absolute_import
 from __future__ import print_function
